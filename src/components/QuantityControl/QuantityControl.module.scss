@@ -1,0 +1,34 @@
+.controlButton {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #06b6d4;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover:not(:disabled) {
+    color: #0891b2;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+
+.valueDisplay {
+  flex: 1;
+  text-align: left;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #22232B;
+}
+

@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 0 24px;
+  grid-area: header;
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__title {
+    margin: 0 !important;
+    font-weight: 600;
+    color: var(--ant-color-text, #1f1f1f);
+  }
+
+  &__menu-icon {
+    font-size: 18px;
+    color: var(--ant-color-primary, #1890ff);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--ant-color-primary-hover, #40a9ff);
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__login-btn {
+    border-radius: 8px;
+    font-weight: 500;
+  }
+}

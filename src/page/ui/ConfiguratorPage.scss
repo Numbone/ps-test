@@ -1,0 +1,82 @@
+.page {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: 
+   "header header"
+   "sidebar configurator";
+
+   @media (max-width:768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: 
+     "header"
+     "configurator";
+   }
+}
+
+.configurator {
+  flex: 1;
+  padding: 53px;
+  padding-left: 163px;
+  grid-area: configurator;
+  @media (max-width:768px) {
+    padding: 16px;
+  }
+}
+
+.configurator__title {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+}
+
+.form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+.form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(444px, 1fr));
+  gap: 18px;
+}
+
+
+
+.form__cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+.form__actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(444px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.form__total {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.form__total-value {
+  font-size: 18px;
+  color: #22232B;
+}
+
+.period{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
